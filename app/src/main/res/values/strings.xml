@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MasterPiece</string>
+
+    <string name="splash_brand">Master\nPiece</string>
+    <string name="splash_tagline">Classical music\nas you like it</string>
+
+    <string name="action_discover">Discover</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_selections">Selections</string>
+    <string name="action_search">Search</string>
+    <string name="action_payment">Subscription</string>
+
+    <string name="home_discover_title">Discover</string>
+    <string name="home_discover_desc">Explore the world of classical music</string>
+    <string name="home_favorites_title">Favorites</string>
+    <string name="home_favorites_desc">Masterpieces you like the most</string>
+    <string name="home_selections_title">Selections</string>
+    <string name="home_selections_desc">Handpicked for all occasions - by you</string>
+
+    <string name="explain_home">Main screen with 3 equally weighted RelativeLayout. Click any option to launch another activity.</string>
+    <string name="explain_composers">Discover section where user can browse through composers. Fast scroll view will fetch data from a database and display it with an ArrayAdapter.</string>
+    <string name="explain_performers">Discover section where user can browse through performers. Fast scroll view will fetch data from a database and display it with an ArrayAdapter.</string>
+    <string name="explain_eras">Discover section where user can browse through eras by scrolling cards in a timeline order. Cards will display in an ArrayList.</string>
+    <string name="explain_payment">Subcribing section for advanced features. Payment is done by integrating PayPal Mobile Payment Libraries (MPL in GitHub repository). PayPal library controls the checkout experience – logging in, reviewing, and completing the payment. After the payment, library returns the buyer to the application.</string>
+    <string name="explain_favorites">Favorite songs of the user are listed in an ArrayList, available for shuffle play, or direct search. The user can easily make a playlist and add to Selections section.</string>
+    <string name="explain_selections">Custom-made playlist arranged like tiles in a GridLayout. User can add pre-set photos to each tile, fitting them to mood/purpose.</string>
+
+    <string name="payment_get">Get</string>
+    <string name="payment_pro">MasterPiece Pro</string>
+    <string name="payment_price">for 8 USD/month</string>
+    <string name="payment_benefits">+ Play all full tracks\n+ Listen offline, anywhere\n+ Go ad-free</string>
+
+</resources>

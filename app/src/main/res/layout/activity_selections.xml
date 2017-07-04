@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLight"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_selections"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:popupTheme="@style/ToolbarTheme"
+        android:theme="@style/ToolbarTheme">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        style="@style/Explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explain_selections" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/selections_layout" />
+</LinearLayout>

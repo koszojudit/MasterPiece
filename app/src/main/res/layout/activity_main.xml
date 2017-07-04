@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.a5_masterpiece.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:popupTheme="@style/ToolbarTheme"
+        android:theme="@style/ToolbarTheme"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/discover"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent">
+
+            <TextView
+                style="@style/Explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explain_home" />
+
+            <TextView
+                android:id="@+id/discover_title"
+                style="@style/HomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_discover_black"
+                android:drawableStart="@drawable/ic_discover_black"
+                android:text="@string/home_discover_title" />
+
+            <TextView
+                android:id="@+id/discover_desc"
+                style="@style/HomeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/discover_title"
+                android:layout_alignStart="@id/discover_title"
+                android:layout_below="@id/discover_title"
+                android:paddingLeft="42dp"
+                android:text="@string/home_discover_desc" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/favorites"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorLight">
+
+            <TextView
+                android:id="@+id/favorites_title"
+                style="@style/HomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_favorite_black"
+                android:drawableStart="@drawable/ic_favorite_black"
+                android:text="@string/home_favorites_title" />
+
+            <TextView
+                android:id="@+id/favorites_desc"
+                style="@style/HomeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/favorites_title"
+                android:layout_alignStart="@id/favorites_title"
+                android:layout_below="@id/favorites_title"
+                android:paddingLeft="42dp"
+                android:text="@string/home_favorites_desc" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selections"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/selections_title"
+                style="@style/HomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_list_black"
+                android:drawableStart="@drawable/ic_list_black"
+                android:text="@string/home_selections_title" />
+
+            <TextView
+                android:id="@+id/selection_desc"
+                style="@style/HomeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/selections_title"
+                android:layout_alignStart="@id/selections_title"
+                android:layout_below="@id/selections_title"
+                android:paddingLeft="42dp"
+                android:text="@string/home_selections_desc" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

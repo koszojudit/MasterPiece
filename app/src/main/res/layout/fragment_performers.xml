@@ -1,0 +1,25 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.a5_masterpiece.PerformersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLight"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explain_performers" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/performers_layout" />
+    </LinearLayout>
+</ScrollView>

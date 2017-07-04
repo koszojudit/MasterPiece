@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.a5_masterpiece">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+
+        <!-- Discover Activity -->
+        <activity android:name=".DiscoverActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/action_discover"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.a5_masterpiece.MainActivity" />
+        </activity>
+
+        <!-- Favorites Activity -->
+        <activity android:name=".FavoritesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/action_favorites"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.a5_masterpiece.MainActivity" />
+        </activity>
+
+        <!-- Selections Activity -->
+        <activity android:name=".SelectionsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/action_selections"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.a5_masterpiece.MainActivity" />
+        </activity>
+
+        <!-- Payment Activity -->
+        <activity android:name=".PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/action_payment"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.a5_masterpiece.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

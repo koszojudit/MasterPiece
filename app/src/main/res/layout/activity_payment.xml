@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLight">
+
+    <LinearLayout
+        android:id="@+id/subscribe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_payment"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:popupTheme="@style/ToolbarTheme"
+            android:theme="@style/ToolbarTheme"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            style="@style/Explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explain_payment" />
+
+        <TextView
+            style="@style/PaymentGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_get" />
+
+        <TextView
+            style="@style/PaymentPro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_pro" />
+
+        <TextView
+            style="@style/PaymentPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_price" />
+
+        <TextView
+            style="@style/PaymentBenefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_benefits" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:drawableRight="@drawable/paypal_white"
+            android:padding="16dp"
+            android:text="Pay with "
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>
+
